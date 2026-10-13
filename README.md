@@ -48,6 +48,7 @@ folder **with the same filename** (no code changes needed). Keep roughly the sho
 | `images/services/conservatory-roofs.jpg` | Services → Conservatory roofs | 4:3 | real photo |
 | `images/services/property-maintenance.jpg` | Services → Property maintenance | 4:3 | placeholder |
 | `images/logo.webp` | Logo card in the "Why Easy Reach" section (also in the nav/footer) | square | real |
+| `images/services/landlord-commercial.jpg` | Service 08 photo | 4:3 | placeholder |
 | `images/before-*.jpg`, `after-*.jpg` | Before/after sliders  | 4:3 | real photos |
 
 Tip: resize photos to ~1200px wide and save at ~80% JPEG quality so the page stays fast.
@@ -81,3 +82,20 @@ In `index.html` find the `EDIT ME` comment in the reviews section, paste in real
 
 ## Hero van
 The van drives across the bottom of the hero (`.hero-road` / `.hero-van` in `css/styles.css`, image `images/van.webp`). Speed is the `15s` in the `van-pass` animation.
+
+## SEO: what is already done
+- Keyword-led `<title>`, meta description, H1, single-page heading hierarchy, descriptive alt text
+- Canonical + hreflang (en-GB), robots meta, geo tags, Open Graph + Twitter cards
+- JSON-LD: LocalBusiness (all 12 services, all 10 parishes, phone, address), WebSite, WebPage and FAQPage (matches the on-page FAQ)
+- `robots.txt`, `sitemap.xml` (with images), `404.html`, `_headers` (security + caching for Cloudflare Pages/Netlify), `site.webmanifest`
+- Fast: lazy images, no build step, preloaded hero art
+
+## Go-live checklist (do these once the domain is chosen)
+1. Run `python3 set-domain.py theirdomain.com` – swaps every `YOUR-DOMAIN.com` (canonical, OG, schema, sitemap, robots).
+2. Add the real review text (see Reviews above). Never add star ratings to the schema unless they are real.
+3. Replace the placeholder service photos (esp. `landlord-commercial.jpg`, `property-maintenance.jpg`).
+4. If they have Facebook / Instagram / Google pages, add them as `"sameAs": [...]` in the JSON-LD.
+5. Submit `https://theirdomain.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+6. **Set up a free Google Business Profile** for Easy Reach (service area: Guernsey) with the same name, phone and address as the site. This is the biggest local-ranking boost, bigger than anything on the page itself.
+7. Ask happy customers for Google reviews and link the profile from the site.
+8. Activate FormSubmit by sending one test enquiry and clicking the email link.

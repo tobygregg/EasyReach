@@ -1,4 +1,7 @@
+# Easy Reach Window Cleaning – robots.txt
 User-agent: *
 Allow: /
+Disallow: /README.md
+Disallow: /set-domain.py
 
-# Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml

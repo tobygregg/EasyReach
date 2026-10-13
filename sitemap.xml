@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://YOUR-DOMAIN.com/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://YOUR-DOMAIN.com/images/og-image.jpg</image:loc><image:title>Easy Reach Window Cleaning, Guernsey</image:title></image:image>
+    <image:image><image:loc>https://YOUR-DOMAIN.com/images/before-conservatory.jpg</image:loc><image:title>Conservatory roof before cleaning</image:title></image:image>
+    <image:image><image:loc>https://YOUR-DOMAIN.com/images/after-conservatory.jpg</image:loc><image:title>Conservatory roof after cleaning</image:title></image:image>
+    <image:image><image:loc>https://YOUR-DOMAIN.com/images/before-patio.jpg</image:loc><image:title>Patio before pressure washing</image:title></image:image>
+    <image:image><image:loc>https://YOUR-DOMAIN.com/images/after-patio.jpg</image:loc><image:title>Patio after pressure washing</image:title></image:image>
+  </url>
+</urlset>
