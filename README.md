@@ -47,7 +47,7 @@ folder **with the same filename** (no code changes needed). Keep roughly the sho
 | `images/services/driveways-patios.jpg` | Services → Driveways & patios | 4:3 | real photo |
 | `images/services/conservatory-roofs.jpg` | Services → Conservatory roofs | 4:3 | real photo |
 | `images/services/property-maintenance.jpg` | Services → Property maintenance | 4:3 | placeholder |
-| `images/logo.webp` | Logo card in the "Why Easy Reach" section (also in the nav/footer) | square | real |
+| `images/logo.svg` / `.png` / `.webp` | Client wordmark (transparent): nav, menu, footer, "Why Easy Reach" card, schema | ~2.2:1 | real, from the client PDF |
 | `images/services/landlord-commercial.jpg` | Service 08 photo | 4:3 | placeholder |
 | `images/before-*.jpg`, `after-*.jpg` | Before/after sliders  | 4:3 | real photos |
 
