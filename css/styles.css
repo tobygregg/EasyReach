@@ -564,3 +564,8 @@ html:not(.js) .rev-strip { overflow-x: auto; }
 @media (min-width: 1024px) { .hero-logo { width:248px; left:-40px; bottom:-40px; } }
 @keyframes hero-logo-float { 0%,100% { transform:rotate(-3deg) translateY(0); } 50% { transform:rotate(-2deg) translateY(-8px); } }
 @media (prefers-reduced-motion: reduce) { .hero-logo { animation:none; } }
+
+/* ---------- Icon-only buttons + Facebook ---------- */
+.btn.btn-icon { padding: 0; width: 40px; }
+@media (min-width: 640px) { .btn-lg.btn-icon-sm { padding: 0; width: 56px; } }
+.btn-fb svg { color: #1877F2; }
