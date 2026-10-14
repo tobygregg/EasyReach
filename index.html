@@ -57,7 +57,7 @@
   <!-- Preload the hero art so it's there instantly -->
   <link rel="preload" as="image" href="images/illustrations/hero-window.svg">
 
-  <!-- ===================== Structured data (LocalBusiness + FAQ). Add "sameAs": [facebook, instagram, google profile URLs] to the business once they exist. Do NOT add star ratings unless they are real. ===================== -->
+  <!-- ===================== Structured data (LocalBusiness + FAQ). Facebook is already in "sameAs"; add Instagram / Google profile URLs when they exist. Do NOT add star ratings unless they are real. ===================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -295,7 +295,10 @@
               }
             }
           ]
-        }
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100057054715342"
+        ]
       },
       {
         "@type": "WebSite",
@@ -432,6 +435,7 @@
       <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
       <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
       <symbol id="i-roller" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="6" x="2" y="2" rx="2"/><path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect width="4" height="6" x="8" y="16" rx="1"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></symbol>
       <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c.7 6.2 3 8.5 12 12-9 3.5-11.3 5.8-12 12-.7-6.2-3-8.5-12-12C9 8.5 11.3 6.2 12 0Z"/></symbol>
     </defs>
   </svg>
@@ -453,6 +457,7 @@
 
       <div class="flex items-center gap-2">
         <a href="tel:+447781112488" class="btn btn-white btn-sm hidden md:inline-flex"><svg aria-hidden="true"><use href="#i-phone"/></svg>07781 112 488</a>
+        <a href="https://www.facebook.com/profile.php?id=100057054715342" class="btn btn-white btn-sm btn-icon btn-fb hidden md:inline-flex" target="_blank" rel="noopener" aria-label="Easy Reach on Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
         <a href="#quote" class="btn btn-yellow btn-sm hidden lg:inline-flex">Free quote</a>
         <a href="tel:+447781112488" class="btn btn-yellow w-12 p-0 md:hidden" aria-label="Call Easy Reach"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
         <button type="button" class="burger lg:hidden" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span></button>
@@ -478,6 +483,7 @@
       <div class="mt-auto grid gap-4 pt-8">
         <a href="tel:+447781112488" class="btn btn-yellow btn-lg w-full"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call 07781 112 488</a>
         <a href="#quote" data-close class="btn btn-blue btn-lg w-full">Get a free quote</a>
+        <a href="https://www.facebook.com/profile.php?id=100057054715342" class="btn btn-white btn-lg btn-fb w-full" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-facebook"/></svg>Find us on Facebook</a>
         <p class="text-center text-sm font-semibold text-muted-foreground">Fully insured · Local &amp; reliable</p>
       </div>
     </aside>
@@ -504,6 +510,7 @@
           <div class="mt-8 flex flex-col gap-4 sm:flex-row" style="--i:3">
             <a href="#quote" class="btn btn-yellow btn-lg">Get a free quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
             <a href="tel:+447781112488" class="btn btn-white btn-lg"><svg aria-hidden="true"><use href="#i-phone"/></svg>07781 112 488</a>
+            <a href="https://www.facebook.com/profile.php?id=100057054715342" class="btn btn-white btn-lg btn-fb btn-icon-sm" target="_blank" rel="noopener" aria-label="Easy Reach on Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg><span class="sm:hidden">Find us on Facebook</span></a>
           </div>
 
           <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-bold text-navy" style="--i:4">
@@ -1148,6 +1155,7 @@
           <ul class="mt-4 grid gap-4">
             <li><a class="foot-link flex items-center gap-4" href="tel:+447781112488"><svg class="h-6 w-6 flex-none text-secondary" aria-hidden="true"><use href="#i-phone"/></svg>07781 112 488</a></li>
             <li><a class="foot-link flex items-center gap-4 break-all" href="mailto:easyreachwindow@gmail.com"><svg class="h-6 w-6 flex-none text-secondary" aria-hidden="true"><use href="#i-mail"/></svg>easyreachwindow@gmail.com</a></li>
+            <li><a class="foot-link flex items-center gap-4" href="https://www.facebook.com/profile.php?id=100057054715342" target="_blank" rel="noopener"><svg class="h-6 w-6 flex-none text-secondary" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a></li>
             <li class="flex items-start gap-4 text-white/78"><svg class="mt-0 h-6 w-6 flex-none text-secondary" aria-hidden="true"><use href="#i-pin"/></svg><address class="not-italic">Easy Reach Ltd, Perrybon House,<br>Guernsey, GY7 9AS</address></li>
           </ul>
         </div>
